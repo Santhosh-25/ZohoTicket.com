@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Admin Page</h1>
+    <div class="container">
+      <div class="user-page-button">
+        <button onclick="location.href='user.html'">User Page</button>
+      </div>
+
+      <form>
+        <h2>Event Form</h2>
+        <label for="location">Location:</label>
+        <input type="text" id="location-input" />
+        <br />
+        <br />
+        <label for="theatres">Theatres:</label>
+        <input type="text" id="theatre-input" /><br />
+        <br />
+        <label for="showTimings">Show Timings: (11.00, 4.00, 10.00)</label>
+        <input type="text" id="showtime-input" />
+        <br />
+        <br />
+        <label for="event">Event / Movie:</label>
+        <input type="text" id="event-input" /><br />
+        <br />
+        <button type="submit" onclick="postTicketEvent();return false;">
+          Add Event
+        </button>
+        <br />
+      </form>
+    </div>
+  </body>
+</html>

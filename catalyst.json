@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "targets": [
+      "ticketing_app_function"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}

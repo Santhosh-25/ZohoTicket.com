@@ -1,0 +1,11 @@
+{
+	"deployment": {
+		"name": "ticketing_app_function",
+		"stack": "node12",
+		"type": "advancedio",
+		"env_variables": {}
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}

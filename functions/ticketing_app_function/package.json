@@ -1,0 +1,9 @@
+{
+	"name": "ticketing_app_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "santhoshmahii25@gmail.com",
+	"dependencies": {
+		"zcatalyst-sdk-node": "latest"
+	}
+}
