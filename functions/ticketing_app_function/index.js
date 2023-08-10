@@ -26,10 +26,10 @@ app.post("/event", async (req, res) => {
   let table = datastore.table("Event");
   let insertPromise = table.insertRow(rowData);
   await insertPromise.then((row) => {
-    console.log("Row inserted successfully:", row);
+    console.log("Event / Movie - Added Successfully", row);
   });
 
-  res.status(200).send("Row Inserted successfully");
+  res.status(200).send("Event / Movie - Added Successfully");
 });
 
 app.get("/event1", (req, res) => {
@@ -174,7 +174,5 @@ app.get("/view", (req, res) => {
       res.status(500).send("error occured");
     });
 });
-
-
 
 module.exports = app;

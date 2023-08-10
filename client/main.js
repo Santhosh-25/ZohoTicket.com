@@ -49,10 +49,6 @@ function getlocation() {
     url: "/server/ticketing_app_function/location?loc=" + loc,
     type: "get",
 
-    data: JSON.stringify({
-      loc_name: loc,
-    }),
-
     success: function (data) {
       console.log(data);
       for (let index = 0; index < data.length; index++) {
@@ -189,4 +185,10 @@ function getTicketReq() {
       console.log(error);
     },
   });
+}
+function logout() {
+  var redirectURL = "/app/";
+  console.log(redirectURL);
+  var auth = catalyst.auth;
+  auth.signOut(redirectURL);
 }
